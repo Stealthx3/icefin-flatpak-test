@@ -5,6 +5,6 @@ indexed-deltas=true
 
 [flatpak]
 title=Icefin Player (test)
-comment=Test builds of Icefin Player
+comment=Test builds of Icefin Player, a themeable HTPC-first Jellyfin client
 homepage=https://github.com/Stealthx3/icefin-player
 default-branch=master

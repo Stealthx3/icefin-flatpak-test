@@ -1,0 +1,32 @@
+# End-to-end test of the publisher with throwaway keys: Flatpak, APT (with a real apt client), F-Droid, Windows feed,
+# and the single-commit push. Runs on changes to main; the gh-pages branch has no workflows.
+name: test
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq flatpak ostree apt-utils dpkg-dev gnupg default-jdk-headless \
+            apksigner aapt zipalign android-sdk-platform-23 >/dev/null
+          pip install --quiet fdroidserver
+      - name: Catalog and config load
+        run: |
+          python3 -c "import argparse, sys; sys.path.insert(0, 'tools'); import icesuite
+          ctx = icesuite.Ctx(argparse.Namespace(config=None, catalog=None, site=None))
+          print('catalog:', ', '.join(ctx.catalog))"
+      - name: End to end
+        run: bash tools/test-e2e.sh

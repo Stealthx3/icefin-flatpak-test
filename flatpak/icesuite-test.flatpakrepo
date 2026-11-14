@@ -1,0 +1,9 @@
+[Flatpak Repo]
+Title=Icesuite (test)
+Url=https://stealthx3.github.io/icesuite-test/flatpak/repo/
+Homepage=https://stealthx3.github.io/icesuite-test/
+Comment=Alpha and test builds of the Icesuite family of apps. Not for daily use.
+Description=Alpha and test builds of the Icesuite family of apps. Not for daily use.
+GPGKey=mDMEavUBtRYJKwYBBAHaRw8BAQdAH+BceJqKk4RRKPV0rJoULpvKCUiHOIn3fyc2Ok13hNe0HUljZWZpbiBQbGF5ZXIgdGVzdCByZXBvc2l0b3J5iJYEExYKAD4WIQRTLKOyj7py/JyfNpwc1TutTUjrVAUCavUBtQIbAwUJA8JnAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAc1TutTUjrVMSAAQCDkikR/kS86FZ2LAmPjWdbJs1/GWKqh4P1ftN175R64AEA9lMl50ps5V0hWKjJdf2mUFrP9qIg/V1ahuQnJ5cgIAk=
+DefaultBranch=master
+RuntimeRepo=https://dl.flathub.org/repo/flathub.flatpakrepo

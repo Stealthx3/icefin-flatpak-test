@@ -1,0 +1,19 @@
+{
+  "icefin-player": {
+    "flatpak": {
+      "version": "0.1.0-alpha.2+9.60.3",
+      "date": "2026-11-14T10:12:03Z",
+      "commit": "a96fc85",
+      "notes": "Media Center 0.6.0, its refinement pass (#168); hover never moves focus without the pointer moving (#166)",
+      "app_id": "io.github.stealthx3.IcefinPlayer",
+      "refs": [
+        "app/io.github.stealthx3.IcefinPlayer/x86_64/master",
+        "runtime/io.github.stealthx3.IcefinPlayer.Locale/x86_64/master"
+      ],
+      "arches": [
+        "x86_64"
+      ],
+      "branch": "master"
+    }
+  }
+}

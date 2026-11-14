@@ -1,0 +1,59 @@
+[
+  {
+    "date": "2026-11-14T10:12:03Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.60.3",
+    "commit": "a96fc85"
+  },
+  {
+    "date": "2026-11-14T09:30:15Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.60.2",
+    "commit": "fffc842"
+  },
+  {
+    "date": "2026-11-14T09:17:51Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.60.1",
+    "commit": "9f824b7"
+  },
+  {
+    "date": "2026-11-14T09:17:30Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.60.1",
+    "commit": "9f824b7"
+  },
+  {
+    "date": "2026-11-14T08:29:57Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.59.1",
+    "commit": "73b8e28"
+  },
+  {
+    "date": "2026-11-14T06:13:09Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+11.1",
+    "commit": "fa5f884+db8a266"
+  },
+  {
+    "date": "2026-11-14T04:12:26Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2+9.59",
+    "commit": "d9f59de+d4f94f7"
+  },
+  {
+    "date": "2026-11-13T21:43:48Z",
+    "app": "icefin-player",
+    "format": "flatpak",
+    "version": "0.1.0-alpha.2",
+    "commit": "a0ba009",
+    "migrated_from": "icefin-flatpak-test"
+  }
+]

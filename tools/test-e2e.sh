@@ -10,6 +10,8 @@ T=$(mktemp -d)
 pass() { printf '  ok  %s\n' "$*"; }
 fail() { printf 'FAIL  %s\n' "$*" >&2; exit 1; }
 
+# HOME moves to the temp folder (flatpak --user, apt, gpg stay isolated); keep pip --user installs such as fdroidserver
+export PYTHONUSERBASE=${PYTHONUSERBASE:-$(python3 -m site --user-base)} PATH=$PATH:$(python3 -m site --user-base)/bin
 export GNUPGHOME=$T/gnupg HOME=$T/home GIT_AUTHOR_NAME=test GIT_AUTHOR_EMAIL=test@example.invalid
 export GIT_COMMITTER_NAME=test GIT_COMMITTER_EMAIL=test@example.invalid
 mkdir -p "$GNUPGHOME" "$HOME" && chmod 700 "$GNUPGHOME"

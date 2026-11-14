@@ -1,0 +1,34 @@
+{
+  "name": "Icesuite (test)",
+  "description": "Alpha and test builds of the Icesuite family of apps. Not for daily use.",
+  "base_url": "https://stealthx3.github.io/icesuite-test/",
+  "github_repo": "Stealthx3/icesuite-test",
+  "pages_branch": "gh-pages",
+  "source_branch": "main",
+  "icon": null,
+  "site_limit_mb": 950,
+  "gpg": {
+    "fingerprint": "532CA3B28FBA72FC9C9F369C1CD53BAD4D48EB54",
+    "public_key": "keys/icesuite-test.gpg"
+  },
+  "flatpak": {
+    "remote_name": "icesuite-test",
+    "default_branch": "master",
+    "runtime_repo": "https://dl.flathub.org/repo/flathub.flatpakrepo",
+    "prune_depth": 3,
+    "static_deltas": false
+  },
+  "apt": {
+    "suite": "test",
+    "component": "main",
+    "architectures": ["amd64", "arm64"],
+    "keep_versions": 2
+  },
+  "fdroid": {
+    "key_alias": "icesuite-test",
+    "keep_versions": 3
+  },
+  "windows": {
+    "keep_releases": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "icefin-player",
+  "name": "Icefin Player",
+  "summary": "A themeable, HTPC-first Jellyfin client",
+  "description": "Icefin Player is a fork of Jellyfin Desktop with a theme engine, controller-first navigation, HDMI audio passthrough and HDR output.",
+  "license": "GPL-2.0-only",
+  "icon": "icons/icefin-player.svg",
+  "homepage": "https://github.com/Stealthx3/icefin-player",
+  "issues": "https://github.com/Stealthx3/icefin-player/issues",
+  "changelog": "https://github.com/Stealthx3/icefin-player/blob/main/CHANGELOG.md",
+  "docs": "https://github.com/Stealthx3/icefin-player/blob/main/docs/INSTALL.md",
+  "categories": ["Multimedia"],
+  "formats": {
+    "flatpak": {
+      "app_id": "io.github.stealthx3.IcefinPlayer",
+      "needs_flathub": true
+    },
+    "deb": {
+      "package": "icefin-player"
+    }
+  },
+  "notes": [
+    "Icefin installs beside Flathub's Jellyfin Desktop, with its own app ID, settings and data.",
+    "If your server only lets approved devices sign in, an administrator allows <i>Icefin Player</i> once (Dashboard → Devices).",
+    "Controllers, audio passthrough and HDR: see the <a href=\"https://github.com/Stealthx3/icefin-player/blob/main/docs/INSTALL.md\">install guide</a>."
+  ]
+}
